@@ -8,8 +8,7 @@
 <body>
     <div class="blue-bg">
         <div class="container">
-            <h3>Your Shopping cart</h3>
-
+            <p class="title">Your Shopping cart</p>
             <table class="white-bg">
                 <thead style="text-align: right;">
                     <tr>
@@ -25,7 +24,7 @@
                         <td><img src="img/lens.jpg"></td>
                         <td>
                             <table>
-                                <tr>
+                                <tr rowspan="2">
                                     <td class="not-under-line">
                                         <img src="img/sony.png" class="sony not-under-line">
                                     </td>
@@ -57,15 +56,17 @@
                         <td class="apt">$ 989.00</th>
                         <td class="apt total">$ 989.00</td>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="apt total" style="font-size: 20px;">$ 2968.00</td>
+                    <tr style="height:80px;">
+                        <td colspan="4" class="not-under-line"></td>
+                        <td class="apt total not-under-line" style="font-size: 20px;">$ 2968.00</td>
                     </tr>
                 </tbody>
             </table>
+            <div class="bottom">
+                <span>Edit your Shopping cart</span>
+                <button class="paybtn">Choose payment method</button>
+            </div>
+            <div style="clear : both"></div>
         </div>
     </div>
 </body>

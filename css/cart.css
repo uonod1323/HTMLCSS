@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-table {
-    border-radius: 10px;
-    border-collapse: collapse;
-  }
+
+body{
+    font-family: 'Do Hyeon', sans-serif;
+}
 
 td:not(.not-under-line){
-    border-bottom: 1px solid rgb(145, 214, 214);;
+    border-bottom: 1px solid rgb(145, 214, 214);
     padding: 10px;
 }
 
 div, input, textarea {
     box-sizing: border-box;
-}
-
-p, h3,table{
-    font-family: 'Do Hyeon', sans-serif;
 }
 
 img{
@@ -44,12 +40,37 @@ img{
     width:100%;
     max-width:700px;
     margin: auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+
 }
 
 .apt{
     text-align: right;
 }
 
-.total{
-    color: rgb(0, 47, 100);
+.title, .total, .bottom > span{
+    color:  rgb(0, 47, 100);
+}
+
+.title{
+    font-size: 30px;
+}
+
+.bottom{
+    padding-top : 30px;
+}
+
+.bottom > span{
+    text-decoration: underline;
+}
+
+.paybtn{
+    padding: 20px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(0, 47, 100);
+    color: rgb(255,255,255);
+    font-family: 'Do Hyeon', sans-serif;
+    float : right;
 }
