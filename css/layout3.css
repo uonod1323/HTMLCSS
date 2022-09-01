@@ -1,8 +1,7 @@
 @font-face{
-    font-family "작명~~~";
-    src : url(../font/N)
+    font-family : '이쁜폰트';
+    src : url(../font/NanumSquareR.woff);
 }
-
 
 div, input, textarea {
     box-sizing: border-box;
@@ -10,7 +9,7 @@ div, input, textarea {
 
 body{
     margin: 0px;
-    font-family: 'gulim', 'dotum', 'arial';
+    font-family: '이쁜폰트', 'dotum', 'arial';
 }
 
 .form-background {
