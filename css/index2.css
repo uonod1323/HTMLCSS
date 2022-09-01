@@ -1,0 +1,22 @@
+.f-small{
+    font-size: 12px;
+}
+.f-medium{
+    font-size: 16px;
+}
+.f-large{
+    font-size: 20px;
+}
+
+.main-btn {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.bg-red {
+    background: red;
+}
+.bg-blue {
+    background: skyblue;
+}

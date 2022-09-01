@@ -1,5 +1,16 @@
+@font-face{
+    font-family "작명~~~";
+    src : url(../font/N)
+}
+
+
 div, input, textarea {
     box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: 'gulim', 'dotum', 'arial';
 }
 
 .form-background {
