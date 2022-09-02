@@ -1,137 +1,163 @@
 div {
-    box-sizing:border-box;   
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0px;
+  margin: 0px;
 }
 
-.profile { 
-    width : 200px;
-    display : block;
-    margin : auto;
-  }
+.profile {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
 .title {
-    text-align: center;
-    font-size: 16px;
+  text-align: center;
+  font-size: 16px;
 }
 
 .content {
-    text-align: center;
+  text-align: center;
 }
 
 .box {
-    width: 200px;
-    background-color: cadetblue;
-    margin: 10px;
-    padding: 40px;
-    border-radius: 5px;
-    margin : auto;
-    text-align: center;
-    font-size: 10px;
-    color: white;
-    box-shadow: 5px 5px black;
+  width: 200px;
+  background-color: cadetblue;
+  margin: 10px;
+  padding: 40px;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  box-shadow: 5px 5px black;
 }
 
 .container {
-    width: 800px;
+  width: 800px;
 }
 
-.header{
-    width: 100%;
-    height:50px;
-    background-color: aquamarine;
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: aquamarine;
 }
 
-.left-menu{
-    width: 20%;
-    height: 400px;
-    background-color: cornflowerblue;
-    /* float: left; */
-    display: inline-block;
-    vertical-align: top;
+.left-menu {
+  width: 20%;
+  height: 400px;
+  background-color: cornflowerblue;
+  /* float: left; */
+  display: inline-block;
+  vertical-align: top;
 }
 
-.right{
-    width: 80%;
-    height: 400px;
-    background-color: coral;
-    /* float: left; */
-    display: inline-block;
+.right {
+  width: 80%;
+  height: 400px;
+  background-color: coral;
+  /* float: left; */
+  display: inline-block;
 }
 
-.footer{
-    width: 100%;
-    height: 100px;
-    background-color: grey;
-    /* clear: both; */
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: grey;
+  /* clear: both; */
 }
 
-.main-background{
-    width:100%;
-    height:500px;
-    background-image: url(../img/shoes.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 1px;
-    position: relative;
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/shoes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1px;
+  position: relative;
 }
 
-.main-title{
-    color: white;
-    font-size: 40px;
-    margin-top: 100px;
+.main-title {
+  color: white;
+  font-size: 60px;
+  margin-top: 100px;
+  text-align: center;
 }
 
-.content2{
-    color: white;
+.content2 {
+  color: white;
 }
 
-.main-button{
-    background: white;
-    padding: 15px;
+.main-button {
+  background: white;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 150px;
+}
+
+.main-upper {
+  background: #eee;
+  width: 80%;
+  max-width: 600px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  top: -40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 20px;
+  font-size: 20px;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+  background-color: rgb(255, 111, 111);
+}
+
+.flex-item {
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-title {
+    font-size: 30px;
+  }
+  .content2 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-title {
     font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    position: absolute;
-    left:0;
-    right:0;
-    margin: auto;
-    width:150px;
+  }
+  .content2 {
+    font-size: 8px;
+  }
 }
-
-.main-upper{
-    background: #eee;
-    width: 80%;
-    max-width: 600px;
-    height:200px;
-    padding:10px;
-    position: relative;
-    top: -40px;
-    left:0;
-    right:0;
-    margin: auto;
-    text-align: center;
-}
-
-input[type=text] {
-    padding: 20px;
-    font-size: 20px;
-    border: 2px solid red;
-    border-radius: 5px;
-}
-
-.flex-container{
-    display: flex;
-    align-items: center;
-    height:40px;
-    padding:10px;
-    background-color: rgb(255, 111, 111);
-}
-
-.flex-item{
-    color : white;
-    font-size: 25px;
-    padding: 10px;
+@media screen and (max-width: 576px) {
+  .main-title {
+    font-size: 10px;
+  }
+  .content2 {
+    font-size: 5px;
+  }
 }
