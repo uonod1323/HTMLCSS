@@ -3,13 +3,19 @@
     src : url(../font/NanumSquareR.woff);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR&display=swap');
+
 div, input, textarea {
     box-sizing: border-box;
 }
 
 body{
     margin: 0px;
-    font-family: '이쁜폰트', 'dotum', 'arial';
+    font-family: 'gulim';
+}
+
+p,h4,h3,h2,h1,span{
+    transform: rotate(0.03deg)
 }
 
 .form-background {
