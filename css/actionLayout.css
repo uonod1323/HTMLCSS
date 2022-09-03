@@ -1,0 +1,20 @@
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+.flex-content{
+    width:400px;
+    height:100px;
+    text-align : center;
+}
+
+@media screen and (max-width: 1200px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+  }
