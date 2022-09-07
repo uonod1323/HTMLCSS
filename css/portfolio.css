@@ -22,7 +22,7 @@ body {
     rgb(112, 165, 245),
     rgb(142, 140, 255)
   );
-  height: 400px;
+  height: 60vh;
   color: white;
 }
 .container-upper-upper-left {
@@ -53,7 +53,6 @@ body {
   background-color: rgb(66, 74, 189);
   padding: 10px;
   padding-top: 50px;
-  padding-bottom: 30px;
 }
 .container-upper-lowerBottom {
   display: flex;
@@ -61,7 +60,11 @@ body {
   height: 280px;
   text-align: center;
   color: white;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+}
+.container-upper-lower-content {
+  margin: 30px;
 }
 .container-upper-lower-content i {
   background-color: white;
@@ -84,6 +87,8 @@ body {
 .container-lower-photoZone {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
   justify-content: center;
 }
 .container-lower-photo {
@@ -91,6 +96,22 @@ body {
   height: 40vh;
   overflow: hidden;
   background-position: center;
+  float: left;
+  overflow: hidden;
+}
+.container-lower-photo-imgContainer,
+.container-lower-photo-imgContainer img {
+  float: left;
+  overflow: hidden;
+  width: 600px;
+}
+.container-lower-photo-imgContainer:hover {
+  border: 20px solid white;
+  transition: all 0.5s;
+}
+.container-lower-photo-imgContainer:hover img {
+  margin: -20px;
+  transition: all 0.5s;
 }
 .img1 {
   background: url("../img/portfolio-1.jpg");
@@ -140,4 +161,19 @@ body {
   margin-left: 5px;
   margin-top: 5px;
   box-shadow: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .container-upper-upper-right img {
+    width: 70%;
+    position: absolute;
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-upper-upper-right img {
+    width: 100%;
+    position: absolute;
+    margin-top: 80px;
+  }
 }
