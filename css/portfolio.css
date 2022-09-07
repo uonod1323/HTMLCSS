@@ -9,6 +9,8 @@ body {
   margin: 0px;
 }
 .container-all {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 .container-upper {
   background-color: black;
@@ -22,7 +24,7 @@ body {
     rgb(112, 165, 245),
     rgb(142, 140, 255)
   );
-  height: 60vh;
+  height: 70vh;
   color: white;
 }
 .container-upper-upper-left {
@@ -35,11 +37,15 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .container-upper-upper-right img {
   width: 50%;
   position: absolute;
   margin-top: 80px;
+  object-fit: scale-down;
 }
 .container-upper-center {
   background-color: white;
@@ -163,17 +169,30 @@ body {
   box-shadow: none;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .container-upper-upper-right img {
-    width: 70%;
+    width: 40%;
     position: absolute;
     margin-top: 80px;
   }
 }
 @media screen and (max-width: 768px) {
+  .container-upper-upper {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .container-upper-upper-left {
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+  }
+  .container-upper-upper-right {
+    width: 100%;
+    height: 100%;
+  }
   .container-upper-upper-right img {
     width: 100%;
-    position: absolute;
-    margin-top: 80px;
+    height: 100%;
+    margin-top: 1px;
   }
 }
