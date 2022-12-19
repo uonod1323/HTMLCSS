@@ -21,3 +21,11 @@ body{
     background-color: #6fbaf8;
     color: white;
 }
+
+.contour{
+    background-color: rgb(197, 197, 197);
+    width: 1px;
+    height :200px;
+    margin-top :30px;
+    margin-bottom :30px;
+}
